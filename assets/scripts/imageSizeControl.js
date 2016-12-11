@@ -19,17 +19,17 @@ function imageResize() {
 		rowWidth = 600;
 
 		marginLine = windowWidth / 2 - 300;
-		lineWidth = 300 - 25;
+		lineWidth = 300 - 37.5;
 		
 	} else {
 		marginLine = 0;
-		lineWidth = windowWidth / 2 - 25;
+		lineWidth = windowWidth / 2 - 37.5;
 	}
 
 	imageWidth = (rowWidth - 8) / 3;
 	imageHeight = imageWidth;
 
-	leftMargin = windowWidth / 2 - 25;
+	leftMargin = windowWidth / 2 - 37.5;
 
 	img.css('width', imageWidth);
 	img.css('height', imageHeight);
