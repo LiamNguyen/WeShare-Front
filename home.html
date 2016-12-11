@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>We Share</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <script src="assets/scripts/jquery-1.10.2.min.js"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/gest.js"></script>
+    <script src="assets/scripts/gest.min.js"></script>
+    <script type="text/javascript" src="assets/scripts/jquery.touchSwipe.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+        <div class="col-md-7 col-md-offset-2">
+            <div id="nav-head" class="navbar-header">
+                <b>WeShare</b>
+            </div>
+            <div class="mp-navbar-right">
+                <div class="sidebar-show">
+                    <div class="sidebar-show-animation" style="transform: rotate(0deg)">
+                        <div class="line firstline" style="width: 20px; transform: rotate(-0deg) translate(0px, 0px);"></div>
+                        <div class="line secondline" style="width: 20px;"></div>
+                        <div class="line thirdline" style="width: 20px; transform: rotate(0deg) translate(0px, 0px);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; overflow: hidden; z-index: 1">
+        <div style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; overflow: auto; transition: -webkit-left 0.3s ease-out, right 0.3s ease-out">
+            <div class="mp-cabinet" style="padding-top: 70px">
+                <img class="background" src="assets/images/background.jpg">
+                <div class="btn-take-picture-container">
+                  <div id="left-line" style="height: 5px;width: 247px; background-color: #23ede9; float: left; margin-top: 23px"></div>
+                  <div id="right-line" style="height: 5px;width: 247px; background-color: #23ede9; float: right; margin-top: 23px"></div>
+                  <div class="btn-take-picture"></div>
+                </div>
+                <div class="cabinet-container">
+
+<!--=====================================================
+          HOME PAGE
+=========================================================-->
+
+                <div id="home" class="cabinet-container-item active">
+                  <div class="page-container">
+                      <article>
+                          <div class="post-header">
+                              <a href="#home">
+                                  <i class="glyphicon-custom glyphicon glyphicon-user"></i>
+                                  <span class="username" style="padding-bottom: 10px;"><b>liam1208</b></span>
+                              </a>
+                              <div class="post-time">
+                                  <span>2h ago</span>
+                              </div>
+                          </div>
+                          <div class="post-body">
+                              <div class="post-caption">
+                                  <span>Here is the caption</span>
+                              </div>
+                              <div class="post-image-container">
+
+                              </div>
+                          </div>
+                          <div class="post-footer">
+                              <span>Here is for Likes and Comments</span>
+                          </div>
+                      </article>
+                    </div>
+                  </div>
+
+<!--=====================================================
+      UPLOAD PAGE
+=========================================================-->
+                    <div id="upload" class="cabinet-container-item">
+                        <span>upload</span>
+                    </div>
+
+<!--=====================================================
+      NOTIFICATION PAGE
+=========================================================-->
+
+                    <div id="notification" class="cabinet-container-item">
+                    </div>
+
+<!--=====================================================
+      PROFILE PAGE
+=========================================================-->
+
+                    <div id="profile" class="cabinet-container-item">
+                      <div class="page-container profile-page-container">
+                        <div class="row">
+                          <div class="profile-picture-container">
+                            <img src="assets/images/photo3.png" style="width: 70px; height: 70px; position: relative;">
+                          </div>
+                          <div class="name-container">
+                            <span id="lbl_Name">Nguyen Thien Phuc</span>
+                          </div>
+                          <div class="btn-edit-profile">
+                            <i class="glyphicon-custom glyphicon glyphicon-pencil" style="font-size: 1.0em"></i>
+                          </div>
+                        </div>
+                        <div class="row" style="margin-top: 10px;">
+                          <div class="info-container panel">
+                            <div class="info-head">Posts</div>
+                            <div class="info-content">15</div>
+                          </div> 
+                        </div>
+                        <div class="row" style="margin-top: 5px;">
+                          <div class="posted-image">
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+                            <div class="image-row" style="margin-bottom: 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                              <img src="assets/images/photo3.png" style=" position: relative; box-shadow: rgba(0, 0, 0, 0.14902) 2px 2px 4px;">
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+<!--=====================================================
+      EDIT PROFILE PAGE
+=========================================================-->
+
+                    <div id="edit-profile" class="cabinet-container-item">
+                      <div class="page-container profile-page-container">
+                        <div style="background-color: yellow; width: 70px; height: 70px; margin-right: auto; margin-left: auto;">
+                          <img src="assets/images/photo3.png" style="width: 70px; height: 70px;">
+                        </div>
+                        <div style="text-align: center; font-size: 12px"><span>Edit profile picture</span></div>
+                        <div class="input-group profile-input-group">
+                            <label class="control-label"><b>Display Name</b></label>
+                            <input data-role="none" type="text" id="txt_DisplayName" placeholder="Your display name" class="form-control form-control-custom edit-profile-form" aria-describedby="helpblock_DisplayName">
+                            <span id="helpblock_DisplayName" class="help-block hidden" style="color:red">Display Name empty</span>
+                        </div>
+                        <div class="input-group profile-input-group">
+                            <label class="control-label"><b>Email</b></label>
+                            <input data-role="none" type="text" id="txt_Email" placeholder="Your email" class="form-control form-control-custom edit-profile-form" aria-describedby="helpblock_Email">
+                            <span id="helpblock_Email" class="help-block hidden" style="color:red">Display Name empty</span>
+                        </div>
+                        <div class="input-group profile-input-group">
+                            <label class="control-label"><b>Phone number</b></label>
+                            <input data-role="none" type="text" id="txt_PhoneNumber" placeholder="Your phone number" class="form-control form-control-custom edit-profile-form" aria-describedby="helpblock_PhoneNumber">
+                            <span id="helpblock_PhoneNumber" class="help-block hidden" style="color:red">Display Name empty</span>
+                        </div>
+                        <div class="input-group profile-input-group">
+                          <label class="control-label"><b>Gender</b></label>
+                          <select id="cmb_Gender" class="form-control form-control-custom edit-profile-form" data-role="none">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                          <span id="helpblock_Gender" class="help-block hidden" style="color:red">Display Name empty</span>
+                        </div>
+                        <div class="input-group profile-input-group">
+                          <label class="control-label"><b>DOB</b></label>
+                          <input data-role="none" type="text" id="txt_Dob" placeholder="Your display name" class="form-control form-control-custom edit-profile-form" aria-describedby="helpblock_Dob">
+                          <span id="helpblock_Dob" class="help-block hidden" style="color:red">Display Name empty</span>
+                        </div>
+                        <button class="btn btn-primary" id="btn_ProfileSave" style="margin-top: 20px">Update</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="presentation" role="presentation" tabindex="0" style="z-index: 99; position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: 0; visibility: hidden; transition: -webkit-opacity 0.3s ease-out; background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="cabinet-sidebar">
+            <ul class="cabinet-menu">
+                <li class="active">
+                    <a href="#home">
+                        <i class="glyphicon-custom glyphicon glyphicon-home"></i>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <i class="glyphicon-custom glyphicon glyphicon-search"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#upload">
+                        <i class="glyphicon-custom glyphicon glyphicon-camera"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#notification" style="position: relative">
+                      <p class="notification-icon">2</p>
+                        <i class="glyphicon-custom glyphicon glyphicon-thumbs-up" style="font-size: 1.4em">
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile">
+                        <i class="glyphicon-custom glyphicon glyphicon-user"></i>
+                    </a>
+                </li>
+                <li>
+                    <a id="logout">
+                        <i class="glyphicon-custom glyphicon glyphicon-off"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="assets/scripts/swipeable.js"></script>
+    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/imageSizeControl.js"></script>
+    <script src="assets/scripts/datePicker.js"></script>
+</body>
+</html>
