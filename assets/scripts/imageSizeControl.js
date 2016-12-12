@@ -11,9 +11,11 @@ function imageResize() {
 	btnTakePic = $('.btn-take-picture'),
 	leftLine = $('#left-line'),
 	rightLine = $('#right-line'),
+	postImgContainer = $('.post-image-container'),
 	rowWidth = $(window).width(),
 	windowWidth = $(window).width(),
-	imageWidth, imageHeight, leftMargin, marginLine, lineWidth;
+	imageWidth, imageHeight, leftMargin, marginLine, lineWidth, 
+	postImgContainerWidth, postImgContainerHeight;
 
 	if (rowWidth > 600) {
 		rowWidth = 600;
@@ -29,6 +31,9 @@ function imageResize() {
 	imageWidth = (rowWidth - 8) / 3;
 	imageHeight = imageWidth;
 
+	postImgContainerWidth = rowWidth;
+	postImgContainerHeight = rowWidth - 100;
+
 	leftMargin = windowWidth / 2 - 37.5;
 
 	img.css('width', imageWidth);
@@ -40,4 +45,7 @@ function imageResize() {
 	leftLine.css('width', lineWidth);
 	rightLine.css('margin-right', marginLine);
 	rightLine.css('width', lineWidth);
+
+	postImgContainer.css('width', postImgContainerWidth);
+	postImgContainer.css('height', postImgContainerHeight);
 }
