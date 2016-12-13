@@ -216,7 +216,6 @@ body {
 }
 
 .post-image-container {
-	background-image: url(../images/photo1.jpeg);
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
