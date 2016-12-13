@@ -4,7 +4,9 @@ var presentation = document.getElementById('presentation'),
         sidebarShow = $('.sidebar-show-animation'),
         firstline = $('.sidebar-show-animation .firstline'),
         thirdline = $('.sidebar-show-animation .thirdline'),
+        camera = $('#takePic'),
         sideBarIsShown = false,
+        cameraIsShown = false,
         degrees = 0,
         degreesFirstLine = 0,
         degreesThirdLine = 0,
@@ -17,6 +19,10 @@ var presentation = document.getElementById('presentation'),
             showSidebar();
             e.preventDefault();
         });
+
+        $('.cabinet-sidebar .cabinet-menu li a#search').on('click', function(e)  {
+
+        }
 
         $('.name-container').on('click', function(e) {
             $('.cabinet-container #edit-profile').show().siblings().hide();
@@ -34,6 +40,10 @@ var presentation = document.getElementById('presentation'),
             document.location.href = "login.html";
         });
 
+        $('.btn-take-picture').on('click', function(e) {
+            showCamera();
+        });
+
 
         btn.click('click', function() {
             showSidebar();
@@ -41,8 +51,6 @@ var presentation = document.getElementById('presentation'),
 
         function rotateAnimation() {
             degrees -= 3;
-            // degreesFirstLine -= 3;
-            // degreesThirdLine += 3;
 
             sidebarShow.css({
                 'transform' : 'rotate(' + degrees + 'deg)'
@@ -50,13 +58,6 @@ var presentation = document.getElementById('presentation'),
 
             if (degrees == -180) {
                 clearInterval(looper);
-                // firstline.css({
-                //     'transform' : 'rotate(-45deg) translate(-5px, -3px)'
-                // });
-
-                // thirdline.css({
-                //     'transform' : 'rotate(45deg) translate(-5px, 3px)'
-                // });
             }
         }
 
@@ -69,13 +70,6 @@ var presentation = document.getElementById('presentation'),
 
             if (degrees == 0) {
                 clearInterval(looper);
-                // firstline.css({
-                //     'transform' : 'rotate(-0deg) translate(0px, 0px)'
-                // });
-
-                // thirdline.css({
-                //     'transform' : 'rotate(0deg) translate(0px, 0px)'
-                // });
             }
         }
 
@@ -156,6 +150,26 @@ var presentation = document.getElementById('presentation'),
             }
         }
 
+        function showCamera() {
+            if (!cameraIsShown) {
+                camera.css({
+                    'transform' : 'translateY(0%)'
+                });
+                $('.navbar').css('visibility', 'hidden');
+                cameraIsShown = true;
+            } else {
+                camera.css({
+                    'transform' : 'translateY(-100%)'
+                });   
+                $('.navbar').css('visibility', 'visible');
+                cameraIsShown = false; 
+            }
+        }
+
+        function showSearch() {
+            
+        }
+
 //SWIPING RECOGNITION
 
 $(function(){
@@ -166,7 +180,10 @@ $(function(){
     if(sideBarIsShown) {
         showSidebar();
     }
-  });    
+  }); 
+  $('#takePic').on("swipe",function(){
+    showCamera();
+  });   
 });
 
 // $(function() {      
